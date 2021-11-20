@@ -1,0 +1,94 @@
+html, body
+{
+	background: black;
+	color: white;
+	width: 100%;
+    height: 98%;
+	margin: 0;
+}
+header
+{
+	height: 3%;
+	text-align: right;
+	color: gray;
+}
+section
+{
+	height: 90%;
+}
+footer
+{
+	height: 7%;
+}
+.leftpage
+{
+	width: 50%;
+	height: 90%;
+	float: left;
+	position: relative;
+	background: linear-gradient(15deg, indianred, black 20%);
+	white-space:nowrap; overflow-y:hidden;
+}
+.rightpage
+{
+	width: 50%;
+	height: 90%;
+	float: right;
+	position: relative;
+	background: linear-gradient(-15deg, steelblue, black 20%);
+	white-space:nowrap; overflow-y:hidden;
+}
+.maindivL
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-60%);
+	font-size: 3em;
+}
+.maindivR
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 3em;
+	text-align: right;
+}
+.startbutton
+{
+	text-decoration: none;
+	color: gray;
+	transition: all 1s;
+}
+.startbutton:hover {
+	color: #fff;
+	letter-spacing: 10px;
+}
+.QButton
+{
+	position: absolute;
+	width: 70%;
+	height: auto;
+	padding: 10%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100%,auto;
+	border-radius : 40px;
+	transition: all 0.5s;
+}
+.QButton:hover
+{
+	letter-spacing: 10px;
+	font-size: 1.1em;
+}
+.QButtonText
+{
+	color: #fff;
+	font-size: 3em;
+	text-align: center;
+	text-decoration: none;
+}
