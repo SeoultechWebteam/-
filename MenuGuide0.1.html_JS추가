@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MenuGuide0.1</title>
+	<style>
+		@import url(.css);
+	</style>
+	<script src="MenuGuide0.1.js">
+		//JavaScript외부파일
+	</script>
+</head>
+<body>
+	<header>
+		<p>메뉴가이드 v0.1</p>
+		각 질문 체크 필수!!
+	</header>
+	<section>
+		<h2>1번</h2>
+		<form>
+			<input type="radio" name="Q1" value="K" onclick='getQ1Val()'>한식
+			<input type="radio" name="Q1" value="J" onclick='getQ1Val()'>일식
+			<input type="radio" name="Q1" value="C" onclick='getQ1Val()'>중식
+			<input type="radio" name="Q1" value="W" onclick='getQ1Val()'>양식
+		</form>
+		<h2>2번</h2>
+		<form>
+			<input type="radio" name="Q2" value="2.1" onclick='getQ2Val()'>혼자
+			<input type="radio" name="Q2" value="2.2" onclick='getQ2Val()'>단체
+			<input type="radio" name="Q2" value="2.3" onclick='getQ2Val()'>애매
+		</form>
+		<h2>3번</h2>
+		<form>
+			<input type="radio" name="Q3" value="3.1" onclick='getQ3Val()'>밥
+			<input type="radio" name="Q3" value="3.2" onclick='getQ3Val()'>빵
+			<input type="radio" name="Q3" value="3.3" onclick='getQ3Val()'>면
+			<input type="radio" name="Q3" value="3.4" onclick='getQ3Val()'>고기
+			<input type="radio" name="Q3" value="3.5" onclick='getQ3Val()'>애매
+		</form>
+		<h2>4번</h2>
+		<form>
+			<input type="radio" name="Q4" value="4.1" onclick='getQ4Val()'>매움
+			<input type="radio" name="Q4" value="4.2" onclick='getQ4Val()'>담백
+			<input type="radio" name="Q4" value="4.3" onclick='getQ4Val()'>애매
+		</form>
+		<br><div id='Result1'>1번</div>
+		<div id='Result2'>2번</div>
+		<div id='Result3'>3번</div>
+		<div id='Result4'>4번</div>
+		<input type="button" value="메뉴추천" onclick="getMenu()">
+	</section>
+</body>
+</html>
