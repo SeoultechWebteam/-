@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>메뉴 추천</title>
+    <style media="screen">
+      html, body {margin:10px;}
+      .title{width:100%; height:50px; background:#86cfcc; text-align:center;}
+      .nav{width:100%; height:25px; background: powderblue; text-align:center;}
+      .sec{width:100%; height:1000px; background: azure;}
+      .foot{width:100%; height:3px background: white; font-size:2px;}
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <h1>메뉴 추천</h1>
+    </div>
+    <div class="nav">
+      <a href=main.html>메뉴 추천</a> | <a href=all.html>전체 메뉴 보기</a>
+    </div>
+    <div class="sec">
+      <h4>1. 한식 or 중식 or 일식 or 양식 (복수 선택 가능)</h4>
+      <form>
+        <label><input type="checkbox" name="fst" value="1"> 한식</label>
+        <label><input type="checkbox" name="fst" value="2"> 중식</label>
+        <label><input type="checkbox" name="fst" value="3"> 일식</label>
+        <label><input type="checkbox" name="fst" value="4"> 양식</label>
+        <label><input type="checkbox" name="fst" value="5"> 기타</label>
+      </form>
+      <h4>2. 밥 or 빵 or 면 or 고기 (복수 선택 가능)</h4>
+      <form>
+        <label><input type="checkbox" name="snd" value="1"> 밥</label>
+        <label><input type="checkbox" name="snd" value="2"> 빵</label>
+        <label><input type="checkbox" name="snd" value="3"> 면</label>
+        <label><input type="checkbox" name="snd" value="4"> 고기</label>
+        <label><input type="checkbox" name="snd" value="5"> 기타</label>
+      </form>
+      <h4>3. 매운 음식 or 안 매운 음식(복수 선택 가능)</h4>
+      <form>
+        <label><input type="checkbox" name="trd" value="1"> 매운 음식</label>
+        <label><input type="checkbox" name="trd" value="2"> 안 매운 음식</label>
+      </form>
+      <h4>4. 혼밥 or 친구와 함께 or 단체식사(복수 선택 가능)</h4>
+      <form>
+        <label><input type="checkbox" name="fth" value="1">혼밥</label>
+        <label><input type="checkbox" name="fth" value="2">친구와 함께</label>
+        <label><input type="checkbox" name="fth" value="3">단체식사</label>
+      </form>
+      <br>
+      <div class="result">
+        <input type="submit" value="결과보기">
+      </div>
+    </div>
+    <div class="foot">web programming project - 20101265 이나경</div>
+  </body>
+</html>
