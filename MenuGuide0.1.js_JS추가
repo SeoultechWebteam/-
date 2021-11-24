@@ -1,0 +1,70 @@
+var QuestionResult = new Array(); //질문들의 결과를 저장할 배열, 배열의 크기=질문수
+var MenuArr = [ //메뉴데이터, 맨 마지막 원소는 메뉴이름
+['K', 2.1, 3.1, 4.2, '순대국밥'],
+['K', 2.2, 3.4, 4.2, '삼겹살'],
+['K', 2.3, 3.5, 4.3, '떡볶이']
+];
+
+function getQ1Val() {
+	var result = document.getElementsByName('Q1'); //name Q1을 가진 객체를 배열로 받는다
+	for(var i=0;i<result.length;i++){
+		if(result[i].checked) { //Q1 체크
+			document.getElementById('Result1').innerText = result[i].value; //문서의 Result1에 Q1 value를 저장
+			QuestionResult[0] = result[i].value; //Q1을 전역 변수에 저장
+		}
+	}
+}
+
+function getQ2Val() {
+	var result = document.getElementsByName('Q2');
+	for(var i=0;i<result.length;i++){
+		if(result[i].checked) {
+			document.getElementById('Result2').innerText = result[i].value;
+			QuestionResult[1] = result[i].value;
+		}
+	}
+}
+
+function getQ3Val() {
+	var result = document.getElementsByName('Q3');
+	for(var i=0;i<result.length;i++){
+		if(result[i].checked) {
+			document.getElementById('Result3').innerText = result[i].value;
+			QuestionResult[2] = result[i].value;
+		}
+	}
+}
+
+function getQ4Val() {
+	var result = document.getElementsByName('Q4');
+	for(var i=0;i<result.length;i++){
+		if(result[i].checked) {
+			document.getElementById('Result4').innerText = result[i].value;
+			QuestionResult[3] = result[i].value;
+		}
+	}
+}
+
+function getMenu() {
+	var menucheck = new Array();
+	for(var i=0;i<QuestionResult.length;i++) { //배열의 크기:질문의 개수
+		menucheck[i] = -1; //-1로 초기화
+	}
+	var issame = false;
+
+	for(var i=0;i<MenuArr.length;i++) { //저장된 메뉴의 수
+		for(var q=0;q<menucheck.length;q++) {
+			if(QuestionResult[q] == MenuArr[i][q]) { //선택한 지문과 메뉴의 데이터와 일치하면
+				menucheck[q] = i; //메뉴 번호를 저장
+				if(q>0 && menucheck[q]==menucheck[q-1]) issame = true; //메뉴체크가 동일한 번호이면
+				else issame = false;
+			}
+			else { issame = false; break; }
+		}
+		if(issame){
+			document.write(MenuArr[i][4]); //메뉴의 맨 마지막 원소는 메뉴이름
+			return;
+		}
+	}
+	alert("메뉴 없음"); //체크된 메뉴가 없으면 추천을 안함
+}
