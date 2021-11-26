@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>메뉴 추천</title>
+    <style media="screen">
+      html, body {margin:10px;}
+      .title{width:100%; height:50px; background:#86cfcc; text-align:center;}
+      .nav{width:100%; height:25px; background: powderblue; text-align:center;}
+      .sec{width:50%; height:1000px; background: azure; float: left;}
+			.aside{width:50%; height:1000px; background: azure; float: right;}
+      .foot{width:100%; height:3px background: white; font-size:2px;}
+    </style>
+		<script>
+			function change(){
+				var imgAA = document.getElementById("img")
+				imgAA.src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTExMTFfMTUg%2FMDAxNjM2NTk3MjQyNTU5.JjM7_MVQq_WJ1TCsQkTwEpZG3sPH14E_DWuA2UcLaNkg.b2jmMMpC5ViUthTFcFrSOyt4Jv_ITNRjyJhI5LA-Pi8g.PNG.dbfla7202%2Fimage.png&type=sc960_832";
+			}
+		</script>
+  </head>
+  <body>
+    <div class="title">
+      <h1>메뉴 추천</h1>
+    </div>
+    <div class="nav">
+    //all.html은 그대로
+      <a href=main.html>메뉴 추천</a> | <a href=all.html>전체 메뉴 보기</a>
+    </div>
+    <div class="sec">
+      <h4>1. 한식 or 중식 or 일식 or 양식 (복수 선택 가능)</h4>
+      <form>
+        <label><input type="checkbox" name="fst" value="1"> 한식</label>
+        <label><input type="checkbox" name="fst" value="2"> 중식</label>
+        <label><input type="checkbox" name="fst" value="3"> 일식</label>
+        <label><input type="checkbox" name="fst" value="4"> 양식</label>
+        <label><input type="checkbox" name="fst" value="5"> 기타</label>
+      </form>
+      <h4>2. 밥 or 빵 or 면 or 고기 (복수 선택 가능)</h4>
+      <form>
+        <label><input type="checkbox" name="snd" value="1"> 밥</label>
+        <label><input type="checkbox" name="snd" value="2"> 빵</label>
+        <label><input type="checkbox" name="snd" value="3"> 면</label>
+        <label><input type="checkbox" name="snd" value="4"> 고기</label>
+        <label><input type="checkbox" name="snd" value="5"> 기타</label>
+      </form>
+      <h4>3. 매운 음식 or 안 매운 음식(복수 선택 가능)</h4>
+      <form>
+        <label><input type="checkbox" name="trd" value="1"> 매운 음식</label>
+        <label><input type="checkbox" name="trd" value="2"> 안 매운 음식</label>
+      </form>
+      <h4>4. 혼밥 or 친구와 함께 or 단체식사(복수 선택 가능)</h4>
+      <form>
+        <label><input type="checkbox" name="fth" value="1">혼밥</label>
+        <label><input type="checkbox" name="fth" value="2">친구와 함께</label>
+        <label><input type="checkbox" name="fth" value="3">단체식사</label>
+      </form>
+      <br>
+      <div class="result">
+        <input type="button" value="결과보기" onclick="change()">
+      </div>
+    </div>
+		<div class="aside">
+			//이미지는 네이버에 들어가서 음식 검색 후 이미지를 우클릭 후 "새 탭에서 이미지 열기" 후 주소를 복붙한다.
+			<img id="img" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTExMDRfMjE4%2FMDAxNjM1OTg0Njg5NjM4.qyJ3bSNEJOGRj4d6_LBc7nrscZBTEsnoFg2kT4CyEsEg.AtbgBPM0rtIjF84YmZWKR-d9uk38jN_WOv1HsrS4UWYg.JPEG.thdud5460%2FIMG_1939.jpg&type=sc960_832">
+		</div>
+    <div class="foot">web programming project - 20101265 이나경 19101241 오성혁 16100077 김범수</div>
+  </body>
+</html>
