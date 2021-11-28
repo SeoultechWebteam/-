@@ -14,38 +14,37 @@
 		<div>메뉴가이드 v0.2</div>
 	</div>
 	<div class="nav">
-		<input type="button" value="메뉴추천" onclick="getMenu()">
-		<button onclick="resetAll()">리셋</button>
+		<button id="NavButton" onclick="getMenu()">추천시작</button>
+		<button id="NavButton" onclick="resetAll()">리셋</button>
 	</div>
 	<div class='section'>
-		<br>
 		<p>모든 문제에 대한 답을 해주세요</p>
 		<form id='question'>
 			<h2>1번</h2>
-			<input type="radio" name="Q1" value="K" onclick='getQnumVal(event,1)'>한식
-			<input type="radio" name="Q1" value="J" onclick='getQnumVal(event,1)'>일식
-			<input type="radio" name="Q1" value="C" onclick='getQnumVal(event,1)'>중식
-			<input type="radio" name="Q1" value="W" onclick='getQnumVal(event,1)'>양식
+			<label><input type="radio" name="Q1" value="K" onclick='getQnumVal(event,1)'>한식</label>
+			<label><input type="radio" name="Q1" value="J" onclick='getQnumVal(event,1)'>일식</label>
+			<label><input type="radio" name="Q1" value="C" onclick='getQnumVal(event,1)'>중식</label>
+			<label><input type="radio" name="Q1" value="W" onclick='getQnumVal(event,1)'>양식</label>
 			<h2>2번</h2>
-			<input type="radio" name="Q2" value="2.1" onclick='getQnumVal(event,2)'>혼자
-			<input type="radio" name="Q2" value="2.2" onclick='getQnumVal(event,2)'>단체
-			<input type="radio" name="Q2" value="2.3" onclick='getQnumVal(event,2)'>애매
+			<label><input type="radio" name="Q2" value="2.1" onclick='getQnumVal(event,2)'>혼자</label>
+			<label><input type="radio" name="Q2" value="2.2" onclick='getQnumVal(event,2)'>단체</label>
+			<label><input type="radio" name="Q2" value="2.3" onclick='getQnumVal(event,2)'>애매</label>
 			<h2>3번</h2>
-			<input type="radio" name="Q3" value="3.1" onclick='getQnumVal(event,3)'>밥
-			<input type="radio" name="Q3" value="3.2" onclick='getQnumVal(event,3)'>빵
-			<input type="radio" name="Q3" value="3.3" onclick='getQnumVal(event,3)'>면
-			<input type="radio" name="Q3" value="3.4" onclick='getQnumVal(event,3)'>고기
-			<input type="radio" name="Q3" value="3.5" onclick='getQnumVal(event,3)'>애매
+			<label><input type="radio" name="Q3" value="3.1" onclick='getQnumVal(event,3)'>밥</label>
+			<label><input type="radio" name="Q3" value="3.2" onclick='getQnumVal(event,3)'>빵</label>
+			<label><input type="radio" name="Q3" value="3.3" onclick='getQnumVal(event,3)'>면</label>
+			<label><input type="radio" name="Q3" value="3.4" onclick='getQnumVal(event,3)'>고기</label>
+			<label><input type="radio" name="Q3" value="3.5" onclick='getQnumVal(event,3)'>애매</label>
 			<h2>4번</h2>
-			<input type="radio" name="Q4" value="4.1" onclick='getQnumVal(event,4)'>매움
-			<input type="radio" name="Q4" value="4.2" onclick='getQnumVal(event,4)'>담백
-			<input type="radio" name="Q4" value="4.3" onclick='getQnumVal(event,4)'>애매
+			<label><input type="radio" name="Q4" value="4.1" onclick='getQnumVal(event,4)'>매움</label>
+			<label><input type="radio" name="Q4" value="4.2" onclick='getQnumVal(event,4)'>담백</label>
+			<label><input type="radio" name="Q4" value="4.3" onclick='getQnumVal(event,4)'>애매</label>
 		</form>
 	</div>
 	<div class='aside'>
-		<div id='MENU'>추천메뉴</div> <!--메뉴출력-->
+		<div class="AsideTitle">추천메뉴</div><div id='MENU'></div> <!--메뉴출력-->
 		<div id='menuIMG'></div> <!--메뉴 이미지 출력 -->
-		<div id='Result'>선택결과</div>
+		<div class="AsideTitle">선택결과</div><div id='Result'></div>
 	</div>
 	<div class='footer'>
 		<p>웹 프로그래밍 프로젝트</p>
