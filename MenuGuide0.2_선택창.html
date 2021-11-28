@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MenuGuide0.2</title>
+	<style>
+		@import url(MenuGuide0.2_선택창.css);
+	</style>
+	<script src="MenuGuide0.2.js">
+		//JavaScript외부파일
+	</script>
+</head>
+<body>
+	<div class='header'>
+		<div>메뉴가이드 v0.2</div>
+	</div>
+	<div class="nav">
+		<input type="button" value="메뉴추천" onclick="getMenu()">
+		<button onclick="resetAll()">리셋</button>
+	</div>
+	<div class='section'>
+		<br>
+		<p>모든 문제에 대한 답을 해주세요</p>
+		<form id='question'>
+			<h2>1번</h2>
+			<input type="radio" name="Q1" value="K" onclick='getQnumVal(event,1)'>한식
+			<input type="radio" name="Q1" value="J" onclick='getQnumVal(event,1)'>일식
+			<input type="radio" name="Q1" value="C" onclick='getQnumVal(event,1)'>중식
+			<input type="radio" name="Q1" value="W" onclick='getQnumVal(event,1)'>양식
+			<h2>2번</h2>
+			<input type="radio" name="Q2" value="2.1" onclick='getQnumVal(event,2)'>혼자
+			<input type="radio" name="Q2" value="2.2" onclick='getQnumVal(event,2)'>단체
+			<input type="radio" name="Q2" value="2.3" onclick='getQnumVal(event,2)'>애매
+			<h2>3번</h2>
+			<input type="radio" name="Q3" value="3.1" onclick='getQnumVal(event,3)'>밥
+			<input type="radio" name="Q3" value="3.2" onclick='getQnumVal(event,3)'>빵
+			<input type="radio" name="Q3" value="3.3" onclick='getQnumVal(event,3)'>면
+			<input type="radio" name="Q3" value="3.4" onclick='getQnumVal(event,3)'>고기
+			<input type="radio" name="Q3" value="3.5" onclick='getQnumVal(event,3)'>애매
+			<h2>4번</h2>
+			<input type="radio" name="Q4" value="4.1" onclick='getQnumVal(event,4)'>매움
+			<input type="radio" name="Q4" value="4.2" onclick='getQnumVal(event,4)'>담백
+			<input type="radio" name="Q4" value="4.3" onclick='getQnumVal(event,4)'>애매
+		</form>
+	</div>
+	<div class='aside'>
+		<div id='MENU'>추천메뉴</div> <!--메뉴출력-->
+		<div id='menuIMG'></div> <!--메뉴 이미지 출력 -->
+		<div id='Result'>선택결과</div>
+	</div>
+	<div class='footer'>
+		<p>웹 프로그래밍 프로젝트</p>
+	</div>
+</body>
+</html>
