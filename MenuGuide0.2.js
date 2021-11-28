@@ -34,7 +34,7 @@ function getQnumVal(event, number) { //number=문제번호
 	QuestionResult[number - 1] = result; //문제번호에 맞게 결과배열에 결과값저장
 	document.getElementById('Result').innerHTML = '선택결과'; //결과창 초기화
 	for(var i=0;i<QueSize;i++) { //모든 결과를 출력
-		document.getElementById('Result').innerHTML += '<br>' + QuestionResult[i];
+		document.getElementById('Result').innerHTML += QuestionResult[i] + '<br>';
 	}
 }
 
@@ -45,8 +45,8 @@ function getMenu() {
 		menucheck[i] = -1; //-1로 초기화
 	}
 	var issame = false;
-	var theMENU = '추천메뉴'; //추천메뉴
-	var theMENUimg = '';
+	var theMENU = ''; //추천메뉴
+	var theMENUimg = null;
 	document.getElementById('MENU').innerHTML = theMENU; //메뉴출력 초기화
 	document.getElementById('menuIMG').style.backgroundImage = theMENUimg;
 
@@ -60,12 +60,12 @@ function getMenu() {
 			else { issame = false; break; }
 		}
 		if(issame) {
-			theMENU += '<br>' + MenuArr[i][4]; //메뉴의 맨 마지막 두번째 원소는 메뉴이름
+			theMENU += MenuArr[i][4] + '<br>'; //메뉴의 맨 마지막 두번째 원소는 메뉴이름
 			theMENUimg = MenuArr[i][5]; //맨 마지막은 사진
 		}
 	}
 
-	if(theMENU == '추천메뉴') alert("메뉴 없음"); //추천메뉴가 없으면 추천을 안함
+	if(theMENU == '') alert("메뉴 없음"); //추천메뉴가 없으면 추천을 안함
 	else {
 		document.getElementById('MENU').innerHTML = theMENU; //추천메뉴 모두 출력
 		document.getElementById('menuIMG').style.backgroundImage = theMENUimg;
@@ -82,7 +82,9 @@ function resetAll() {
 		if(qEm[i].type == "radio") qEm[i].checked = false;
 	}	
 	//출력초기화
-	document.getElementById('MENU').innerHTML = '추천메뉴';
-	document.getElementById('menuIMG').style.backgroundImage = '';
-	document.getElementById('Result').innerHTML = '선택결과';
+	document.getElementById('MENU').innerHTML = '';
+	document.getElementById('menuIMG').style.backgroundImage = null;
+	document.getElementById('Result').innerHTML = null;
+	//데이터초기화
+	QuestionResult = new Array();
 }
