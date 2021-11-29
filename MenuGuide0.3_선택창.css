@@ -1,0 +1,118 @@
+html, body, 
+/*h1, h2, h3, h4, h5, h6,*/ p
+{
+    margin: 0;
+}
+html,
+body
+{
+	margin:0;
+    padding:0;
+	width: 100%;
+	height: 100%;
+	color: midnightblue;
+	background: white;
+}
+a
+{
+	text-decoration: none; //링크 기본 밑줄을 제거
+}
+.header
+{
+    width: 100%;
+    height: 25px;
+    background: darkslateblue;
+	color: gray;
+	text-align: right;
+	position: fixed;
+	z-index: 1;
+}
+.nav
+{
+	width: 100%;
+	height: 32px;
+	background: cornflowerblue;
+	display: inline-block;
+	position: fixed;
+	top: 25px;
+	z-index: 1;
+}
+.section
+{
+	width: 80%;
+	min-height: calc(100% - 57px - 50px);
+	padding-top: 57px;
+	padding-bottom: -57px;
+	background: white;
+	font-size: 1.2em;
+	position: relative;
+}
+.aside
+{
+	width: 20%;
+	height: calc(100% - 57px - 50px);
+	background: white;
+	font-size: 1.2em;
+	position: fixed;
+	top: 57px;
+	right: 0;
+	overflow-y:auto;
+}
+.footer
+{
+	width: 100%;
+	height: 50px;
+	background: darkslateblue;
+	color: white;
+	text-align: center;
+	position: relative;
+}
+#MENU { //추천메뉴
+	width: 100%;
+	min-height: calc(45% - 162px);
+	padding: 10px;
+	padding-bottom: 0;
+	font-size: 1.5em;
+}
+#menuIMG { //메뉴이미지
+	width: 100%;
+	height: 200px;
+	background-color: white;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(.jpg);
+}
+#Result { //선택결과
+	width: 100%;
+	min-height: calc(55% - 162px);
+	padding: 10px;
+	padding-bottom: 0;
+}
+#NavButton {
+	background: cornflowerblue;
+	border: none;
+	color: white;
+	display: inline-block;
+	font-weight: bold;
+	margin-left: 10px;
+	padding: 6px 10px;
+	transition: all 0.5s;
+}
+#NavButton:hover {
+	color: cornflowerblue;
+	border-bottom: 2px solid cornflowerblue;
+	background: white;
+	letter-spacing: 2px;
+}
+.AsideTitle {
+	margin: 2px;
+	padding: 8px;
+	height: 30px;
+	font-size: 1.2em;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-align: center;
+	color: cornflowerblue;
+	border-bottom: 2px solid cornflowerblue;
+}
