@@ -54,7 +54,26 @@ const MenuArr = [ //메뉴데이터, 맨 마지막 원소는 메뉴사진, 맨 �
 ['J', 2.2, 3.3, 4.2, '명란파스타', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EB%AA%85%EB%9E%80%ED%8C%8C%EC%8A%A4%ED%83%80.jpg)"],
 ['J', 2.2, 3.4, 4.1, '매운모츠나베', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EB%A7%A4%EC%9A%B4%EB%AA%A8%EC%B8%A0%EB%82%98%EB%B2%A0.jpg)"],
 ['J', 2.2, 3.4, 4.2, '모츠나베', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EB%AA%A8%EC%B8%A0%EB%82%98%EB%B2%A0.jpg)"],
-['J', 2.2, 3.4, 4.2, '스키야키', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EC%8A%A4%ED%82%A4%EC%95%BC%ED%82%A4.jpg)"]
+['J', 2.2, 3.4, 4.2, '스키야키', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EC%8A%A4%ED%82%A4%EC%95%BC%ED%82%A4.jpg)"],
+['W', 2.1, 3.1, 4.1, '카레',"url(https://raw.githubusercontent.com/SeoultechWebteam/images/1e10ba7093d4b88f7371742fdc3ed2ccb19d1054/%EC%B9%B4%EB%A0%88.jpg)"],
+['W', 2.1, 3.1, 4.2, '리조또',"url(https://raw.githubusercontent.com/SeoultechWebteam/images/e87d18de81de0e46e1ef8d9d92b941722fb8bd4a/%EB%A6%AC%EC%A1%B0%EB%98%90.jpg)"],
+['W', 2.1, 3.2, 4.1, '타코',"url(https://raw.githubusercontent.com/SeoultechWebteam/images/6d14fad2ff52e839c9e0d835dc4820e5711c83b6/%ED%83%80%EC%BD%94.jpg)"],
+['W', 2.1, 3.2, 4.2, '햄버거',"url(https://raw.githubusercontent.com/SeoultechWebteam/images/6d14fad2ff52e839c9e0d835dc4820e5711c83b6/%ED%96%84%EB%B2%84%EA%B1%B0.jpg)"],
+['W', 2.1, 3.2, 4.2, '토스트',"url(https://raw.githubusercontent.com/SeoultechWebteam/images/ef869416053e37a36d8ce70eab5795a1940c6d35/%ED%86%A0%EC%8A%A4%ED%8A%B8.jpg)"],
+['W', 2.1, 3.2, 4.2, '멘보샤',"url(https://raw.githubusercontent.com/SeoultechWebteam/images/49b648ecadd96117e37cf2b52ea835d292792aea/%EB%A9%98%EB%B3%B4%EC%83%A4.jpg)"],
+['W', 2.1, 3.3, 4.1, '분',"url(https://raw.githubusercontent.com/SeoultechWebteam/images/4af03332f1f3519920a35f1f1a9ed7b1a5d3e8ac/%EB%B6%84.jpeg)"],
+['W', 2.1, 3.3, 4.2, '파스타',"url(https://raw.githubusercontent.com/SeoultechWebteam/images/db46d1c2806cac8b8c6117d9d36d672ecc724ebc/%ED%8C%8C%EC%8A%A4%ED%83%80.jpg)"],
+['W', 2.1, 3.4, 4.2, '비프 부르기뇽',"url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EB%B9%84%ED%94%84%20%EB%B6%80%EB%A5%B4%EA%B8%B0%EB%87%BD.jpg)"],
+['W', 2.2, 3.1, 4.2, '연어 스테이크',"url(https://raw.githubusercontent.com/SeoultechWebteam/images/7819ccab6ec723a284e60c0dd3b95f6eddb8f33a/%EC%97%B0%EC%96%B4%20%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%81%AC.jpg)"],
+['W', 2.2, 3.1, 4.2, '월남쌈',"url(https://raw.githubusercontent.com/SeoultechWebteam/images/ac9cc95dcec1a5649e0c30f887fe5a163f2962a2/%EC%9B%94%EB%82%A8%EC%8C%88.jpg)"],
+['W', 2.2, 3.2, 4.2, '피자',"url(https://raw.githubusercontent.com/SeoultechWebteam/images/fa66660cecaf22ab0b89db624cd44105a9685666/%ED%94%BC%EC%9E%90.jpg)"],
+['W', 2.2, 3.2, 4.2, '감바스',"url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EA%B0%90%EB%B0%94%EC%8A%A4.jpg)"],
+['W', 2.2, 3.2, 4.2, '에그인헬',"url(https://raw.githubusercontent.com/SeoultechWebteam/images/0666839f4298f4e083e0586fa9a5c3ddd12f40c0/%EC%97%90%EA%B7%B8%EC%9D%B8%ED%97%AC.jpg)"],
+['W', 2.2, 3.3, 4.2, '파스타',"url(https://raw.githubusercontent.com/SeoultechWebteam/images/db46d1c2806cac8b8c6117d9d36d672ecc724ebc/%ED%8C%8C%EC%8A%A4%ED%83%80.jpg)"],
+['W', 2.2, 3.3, 4.2, '쌀국수',"url(https://raw.githubusercontent.com/SeoultechWebteam/images/5687996ebe01d13c3bc327aa5ffd96739bf7f67c/%EC%8C%80%EA%B5%AD%EC%88%98.jpg)"],
+['W', 2.2, 3.3, 4.2, '라자냐',"url(https://raw.githubusercontent.com/SeoultechWebteam/images/16c09f5469b6e0389f9eff426a3d682328874204/%EB%A6%AC%EC%9E%90%EB%83%90.jpg)"],
+['W', 2.2, 3.4, 4.2, '텍사스 바베큐',"url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%ED%85%8D%EC%82%AC%EC%8A%A4%20%EB%B0%94%EB%B2%A0%ED%81%90.jpg)"],
+['W', 2.2, 3.4, 4.2, '카르파쵸',"url(https://raw.githubusercontent.com/SeoultechWebteam/images/cf13a5f2dd0b0fa0f8505b62ad1eceb7237abc9d/%EC%B9%B4%ED%94%84%ED%8C%8C%EC%B5%B8.jpg)"]
 ];
 //데이터 추가 필요
 //이미지는 깃허브 저장후 다운로드에서 이미지주소 , "url()" 에 복붙
