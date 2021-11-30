@@ -29,12 +29,14 @@ a
 }
 .nav
 {
-	width: 100%;
+	width: 180px;
 	height: 32px;
 	background: cornflowerblue;
-	display: inline-block;
+	border-radius: 0 0 0 12px;
+	text-align: center;
 	position: fixed;
 	top: 25px;
+	right : 20%;
 	z-index: 1;
 }
 .section
@@ -48,12 +50,14 @@ a
 }
 .aside
 {
-	width: 20%;
-	height: calc(100% - 57px - 51px);
+	width: calc(20% - 40px);
+	height: calc(100% - 25px - 61px);
+	margin-top: -10px;
+	padding: 0 20px 20px 20px;
 	background: white;
 	font-size: 1.2em;
 	position: fixed;
-	top: 57px;
+	top: 25px;
 	right: 0;
 	overflow-y:auto;
 }
@@ -72,13 +76,13 @@ a
 #MENU { //추천메뉴
 	width: 100%;
 	min-height: calc(45% - 162px);
-	padding: 10px;
 	padding-bottom: 0;
 	font-size: 1.5em;
 }
 #menuIMG { //메뉴이미지
-	width: 100%;
+	width: calc(100% + 40px);
 	height: 200px;
+	margin: 10px -20px 0 -20px;
 	background-color: white;
 	background-size: cover;
 	background-position: center;
@@ -88,7 +92,6 @@ a
 #Result { //선택결과
 	width: 100%;
 	height: auto;
-	padding: 10px;
 	padding-bottom: 0;
 }
 .HeaderButton { /*홈버튼*/
@@ -117,27 +120,24 @@ a
 	display: inline-block;
 	font-weight: bold;
 	margin-left: 10px;
+	margin-right: 10px;
 	padding: 6px 10px;
 	transition: all 0.5s;
 }
 .NavButton:hover {
 	color: cornflowerblue;
-	border-bottom: 2px solid cornflowerblue;
 	background: white;
 	letter-spacing: 2px;
 }
 .AsideTitle {
-	width: 80%;
-	margin: 2px;
-	padding: 8px;
+	width: calc(100% + 40px);
 	height: 30px;
+	margin: 10px 20px 10px -20px;
+	padding: 10px 0 10px 0;
 	font-size: 1.2em;
 	font-weight: bold;
 	letter-spacing: 2px;
 	text-align: center;
 	color: cornflowerblue;
-	border-bottom: 2px solid cornflowerblue;
-	position: relative;
-	left: 50%;
-	margin-left: calc(-80%/2 - 10px/2);
+	border-bottom: 5px solid beige;
 }
