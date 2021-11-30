@@ -1,7 +1,7 @@
 var QuestionResult = new Array(); //질문들의 결과를 저장할 배열, 배열의 크기=질문수
 const MenuArr = [ //메뉴데이터, 맨 마지막 원소는 메뉴사진, 맨 마지막에서 두번째는 메뉴이름
 ['K', 2.1, 3.1, 4.2, '순대국밥', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EC%88%9C%EB%8C%80%EA%B5%AD%EB%B0%A5.jpg)"],
-['K', 2.1, 3.1, 4.1, '육개장'],
+['K', 2.1, 3.1, 4.1, '육개장', "url(https://github.com/SeoultechWebteam/images/blob/main/%EC%9C%A1%EA%B0%9C%EC%9E%A5.jpg?raw=true)"],
 ['K', 2.1, 3.1, 4.2, '비빔밥', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EB%B9%84%EB%B9%94%EB%B0%A5.jpg))"],
 ['K', 2.1, 3.1, 4.2, '김밥', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EA%B9%80%EB%B0%A5.jpg)"],
 ['K', 2.1, 3.2, 4.1, '떡볶이'],
