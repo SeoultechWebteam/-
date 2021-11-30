@@ -1,8 +1,8 @@
 var QuestionResult = new Array(); //질문들의 결과를 저장할 배열, 배열의 크기=질문수
 const MenuArr = [ //메뉴데이터, 맨 마지막 원소는 메뉴사진, 맨 마지막에서 두번째는 메뉴이름
-['K', 2.1, 3.1, 4.1, '육개장', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EC%9C%A1%EA%B0%9C%EC%9E%A5.jpg)"],
 ['K', 2.1, 3.1, 4.2, '순대국밥', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EC%88%9C%EB%8C%80%EA%B5%AD%EB%B0%A5.jpg)"],
-['K', 2.1, 3.1, 4.2, '비빔밥', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EB%B9%84%EB%B9%94%EB%B0%A5.jpg)"],
+['K', 2.1, 3.1, 4.1, '육개장', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EC%9C%A1%EA%B0%9C%EC%9E%A5.jpg)"],
+['K', 2.1, 3.1, 4.2, '비빔밥', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EB%B9%84%EB%B9%94%EB%B0%A5.jpg))"],
 ['K', 2.1, 3.1, 4.2, '김밥', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EA%B9%80%EB%B0%A5.jpg)"],
 ['K', 2.1, 3.2, 4.1, '떡볶이', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EB%96%A1%EB%B3%B6%EC%9D%B4.jpg)"],
 ['K', 2.1, 3.2, 4.2, '떡만두국', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EB%96%A1%EB%A7%8C%EB%91%90%EA%B5%AD.jpg)"],
@@ -18,7 +18,7 @@ const MenuArr = [ //메뉴데이터, 맨 마지막 원소는 메뉴사진, 맨 �
 ['K', 2.2, 3.4, 4.2, '족발', "url(https://github.com/SeoultechWebteam/images/blob/main/%EC%A1%B1%EB%B0%9C.jpg?raw=true)"],
 ['K', 2.2, 3.4, 4.2, '곱창', "url(https://github.com/SeoultechWebteam/images/blob/main/%EA%B3%B1%EC%B0%BD.jpg?raw=true)"],
 ['K', 2.2, 3.4, 4.2, '회', "url(https://github.com/SeoultechWebteam/images/blob/main/%ED%9A%8C.jpg?raw=true)"],
-['C', 2.1, 3.1, 4.1, '짬뽕밥', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EC%A7%AC%EB%BD%95%EB%B0%A5.jpg)"],
+['C', 2.1, 3.1, 4.1, '짬뽕밥', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EC%A7%AC%EB%BD%95%EB%B0%A5.jpg)"], //중식시작
 ['C', 2.1, 3.1, 4.2, '중식볶음밥', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EC%A4%91%EC%8B%9D%EB%B3%B6%EC%9D%8C%EB%B0%A5.jpg)"],
 ['C', 2.1, 3.3, 4.1, '짬뽕', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EC%A7%AC%EB%BD%95.jpg)"],
 ['C', 2.1, 3.3, 4.2, '짜장면', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EC%A7%9C%EC%9E%A5%EB%A9%B4.jpg)"],
@@ -33,7 +33,7 @@ const MenuArr = [ //메뉴데이터, 맨 마지막 원소는 메뉴사진, 맨 �
 ['C', 2.2, 3.5, 4.1, '마라샹궈', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EB%A7%88%EB%9D%BC%EC%83%B9%EA%B6%88.jpg)"],
 ['C', 2.2, 3.5, 4.2, '팔보채', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%ED%8C%94%EB%B3%B4%EC%B1%84.jpg)"],
 ['C', 2.2, 3.5, 4.2, '어향가지', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EC%96%B4%ED%96%A5%EA%B0%80%EC%A7%80.jpg)"],
-['J', 2.1, 3.1, 4.1, '매운일식덮밥', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EB%A7%A4%EC%9A%B4%EC%9D%BC%EC%8B%9D%EB%8D%AE%EB%B0%A5.jpg)"],
+['J', 2.1, 3.1, 4.1, '매운일식덮밥', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EB%A7%A4%EC%9A%B4%EC%9D%BC%EC%8B%9D%EB%8D%AE%EB%B0%A5.jpg)"], //일식시작
 ['J', 2.1, 3.1, 4.1, '매운카레라이스', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EB%A7%A4%EC%9A%B4%EC%B9%B4%EB%A0%88%EB%9D%BC%EC%9D%B4%EC%8A%A4.jpg)"],
 ['J', 2.1, 3.1, 4.2, '텐동', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%ED%85%90%EB%8F%99.jpg)"],
 ['J', 2.1, 3.1, 4.2, '사케동', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EC%82%AC%EC%BC%80%EB%8F%99.jpg)"],
@@ -54,7 +54,7 @@ const MenuArr = [ //메뉴데이터, 맨 마지막 원소는 메뉴사진, 맨 �
 ['J', 2.2, 3.3, 4.2, '명란파스타', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EB%AA%85%EB%9E%80%ED%8C%8C%EC%8A%A4%ED%83%80.jpg)"],
 ['J', 2.2, 3.4, 4.1, '매운모츠나베', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EB%A7%A4%EC%9A%B4%EB%AA%A8%EC%B8%A0%EB%82%98%EB%B2%A0.jpg)"],
 ['J', 2.2, 3.4, 4.2, '모츠나베', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EB%AA%A8%EC%B8%A0%EB%82%98%EB%B2%A0.jpg)"],
-['J', 2.2, 3.4, 4.2, '스키야키', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EC%8A%A4%ED%82%A4%EC%95%BC%ED%82%A4.jpg)"],
+['J', 2.2, 3.4, 4.2, '스키야키', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EC%8A%A4%ED%82%A4%EC%95%BC%ED%82%A4.jpg)"]
 ];
 //데이터 추가 필요
 //이미지는 깃허브 저장후 다운로드에서 이미지주소 , "url()" 에 복붙
@@ -119,4 +119,9 @@ function resetAll() {
 	document.getElementById('Result').innerHTML = null;
 	//데이터초기화
 	QuestionResult = new Array();
+}
+
+/*메인페이지 관련 JS*/
+function mainstart() {
+	//
 }
