@@ -51,6 +51,7 @@ const MenuArr = [ //메뉴데이터, 맨 마지막 원소는 메뉴사진, 맨 �
 ['J', 2.1, 3.4, 4.2, '일식화로구이', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EC%9D%BC%EC%8B%9D%ED%99%94%EB%A1%9C%EA%B5%AC%EC%9D%B4.jpg)"],
 ['J', 2.2, 3.1, 4.2, '초밥', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EC%B4%88%EB%B0%A5.jpg)"],
 ['J', 2.2, 3.2, 4.2, '카츠산도', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EC%B9%B4%EC%B8%A0%EC%82%B0%EB%8F%84.jpg)"],
+['J', 2.2, 3.2, 4.2, '타코야끼', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%ED%83%80%EC%BD%94%EC%95%BC%EB%81%BC.jpg)"],
 ['J', 2.2, 3.3, 4.2, '명란파스타', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EB%AA%85%EB%9E%80%ED%8C%8C%EC%8A%A4%ED%83%80.jpg)"],
 ['J', 2.2, 3.4, 4.1, '매운모츠나베', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EB%A7%A4%EC%9A%B4%EB%AA%A8%EC%B8%A0%EB%82%98%EB%B2%A0.jpg)"],
 ['J', 2.2, 3.4, 4.2, '모츠나베', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EB%AA%A8%EC%B8%A0%EB%82%98%EB%B2%A0.jpg)"],
