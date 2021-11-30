@@ -71,7 +71,7 @@ function getMenu() {
 
 	for(var i=0;i<MenuArr.length;i++) { //저장된 메뉴의 수
 		for(var q=0;q<menucheck.length;q++) {
-			if(QuestionResult[q] == MenuArr[i][q]) { //선택한 지문과 메뉴의 데이터와 일치하면
+			if(QuestionResult[q] == MenuArr[i][q] || QuestionResult[q] == q + 1 ) { //선택한 지문과 메뉴의 데이터와 일치하거나 상관없음 일때
 				menucheck[q] = i; //메뉴 번호를 저장
 				if(q>0 && menucheck[q]==menucheck[q-1]) issame = true; //메뉴체크가 동일한 번호이면
 				else issame = false;
