@@ -1,7 +1,7 @@
 var QuestionResult = new Array(); //질문들의 결과를 저장할 배열, 배열의 크기=질문수
 const MenuArr = [ //메뉴데이터, 맨 마지막 원소는 메뉴사진, 맨 마지막에서 두번째는 메뉴이름
-['K', 2.1, 3.1, 4.2, '순대국밥', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EC%88%9C%EB%8C%80%EA%B5%AD%EB%B0%A5.jpg)"],
 ['K', 2.1, 3.1, 4.1, '육개장', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EC%9C%A1%EA%B0%9C%EC%9E%A5.jpg)"],
+['K', 2.1, 3.1, 4.2, '순대국밥', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EC%88%9C%EB%8C%80%EA%B5%AD%EB%B0%A5.jpg)"],
 ['K', 2.1, 3.1, 4.2, '비빔밥', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EB%B9%84%EB%B9%94%EB%B0%A5.jpg))"],
 ['K', 2.1, 3.1, 4.2, '김밥', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EA%B9%80%EB%B0%A5.jpg)"],
 ['K', 2.1, 3.2, 4.1, '떡볶이', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EB%96%A1%EB%B3%B6%EC%9D%B4.jpg)"],
@@ -33,7 +33,6 @@ const MenuArr = [ //메뉴데이터, 맨 마지막 원소는 메뉴사진, 맨 �
 ['C', 2.2, 3.5, 4.1, '마라샹궈', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EB%A7%88%EB%9D%BC%EC%83%B9%EA%B6%88.jpg)"],
 ['C', 2.2, 3.5, 4.2, '팔보채', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%ED%8C%94%EB%B3%B4%EC%B1%84.jpg)"],
 ['C', 2.2, 3.5, 4.2, '어향가지', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EC%96%B4%ED%96%A5%EA%B0%80%EC%A7%80.jpg)"],
-	
 ['J', 2.1, 3.1, 4.1, '매운일식덮밥', "url()"],
 ['J', 2.1, 3.1, 4.1, '매운카레라이스', "url()"],
 ['J', 2.1, 3.1, 4.2, '텐동', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%ED%85%90%EB%8F%99.jpg)"],
