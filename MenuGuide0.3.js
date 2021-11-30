@@ -55,7 +55,7 @@ const MenuArr = [ //메뉴데이터, 맨 마지막 원소는 메뉴사진, 맨 �
 ['J', 2.2, 3.4, 4.1, '매운모츠나베', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EB%A7%A4%EC%9A%B4%EB%AA%A8%EC%B8%A0%EB%82%98%EB%B2%A0.jpg)"],
 ['J', 2.2, 3.4, 4.2, '모츠나베', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EB%AA%A8%EC%B8%A0%EB%82%98%EB%B2%A0.jpg)"],
 ['J', 2.2, 3.4, 4.2, '스키야키', "url(https://raw.githubusercontent.com/SeoultechWebteam/images/main/%EC%8A%A4%ED%82%A4%EC%95%BC%ED%82%A4.jpg)"],
-['W', 2.1, 3.1, 4.1, '카레',"url(https://raw.githubusercontent.com/SeoultechWebteam/images/1e10ba7093d4b88f7371742fdc3ed2ccb19d1054/%EC%B9%B4%EB%A0%88.jpg)"],
+['W', 2.1, 3.1, 4.1, '카레',"url(https://raw.githubusercontent.com/SeoultechWebteam/images/1e10ba7093d4b88f7371742fdc3ed2ccb19d1054/%EC%B9%B4%EB%A0%88.jpg)"],//양식 
 ['W', 2.1, 3.1, 4.2, '리조또',"url(https://raw.githubusercontent.com/SeoultechWebteam/images/e87d18de81de0e46e1ef8d9d92b941722fb8bd4a/%EB%A6%AC%EC%A1%B0%EB%98%90.jpg)"],
 ['W', 2.1, 3.2, 4.1, '타코',"url(https://raw.githubusercontent.com/SeoultechWebteam/images/6d14fad2ff52e839c9e0d835dc4820e5711c83b6/%ED%83%80%EC%BD%94.jpg)"],
 ['W', 2.1, 3.2, 4.2, '햄버거',"url(https://raw.githubusercontent.com/SeoultechWebteam/images/6d14fad2ff52e839c9e0d835dc4820e5711c83b6/%ED%96%84%EB%B2%84%EA%B1%B0.jpg)"],
