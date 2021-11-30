@@ -11,7 +11,7 @@ body
 	width: 100%;
 	height: 100%;
 	color: midnightblue;
-	background: white;
+	background: beige;
 }
 a
 {
@@ -40,17 +40,16 @@ a
 .section
 {
 	width: 80%;
-	min-height: calc(100% - 57px - 50px);
+	min-height: calc(100% - 57px - 51px);
 	padding-top: 57px;
 	padding-bottom: -57px;
-	background: white;
 	font-size: 1.2em;
 	position: relative;
 }
 .aside
 {
 	width: 20%;
-	height: calc(100% - 57px - 50px);
+	height: calc(100% - 57px - 51px);
 	background: white;
 	font-size: 1.2em;
 	position: fixed;
@@ -60,12 +59,15 @@ a
 }
 .footer
 {
-	width: 100%;
+	width: 90%;
 	height: 50px;
-	background: darkslateblue;
-	color: white;
+	background: beige;
+	border-top: 1px solid midnightblue;
+	color: lightslategray;
 	text-align: center;
 	position: relative;
+	left: 50%;
+	margin-left: calc(-90%/2);
 }
 #MENU { //추천메뉴
 	width: 100%;
@@ -85,11 +87,30 @@ a
 }
 #Result { //선택결과
 	width: 100%;
-	min-height: calc(55% - 162px);
+	height: auto;
 	padding: 10px;
 	padding-bottom: 0;
 }
-#NavButton {
+.HeaderButton { /*홈버튼*/
+	height: 100%;
+	background: url("https://raw.githubusercontent.com/SeoultechWebteam/images/main/%ED%99%88.png") no-repeat;
+	background-size: 110%;
+	background-position: center;
+	border: none;
+	color: white;
+	display: inline-block;
+	font-weight: bold;
+	margin-left: 10px;
+	padding: 6px 10px;
+	transition: all 0.3s;
+	position: absolute;
+	left: 0;
+}
+.HeaderButton:hover {
+	background-size: 130%;
+	color: darkslateblue;
+}
+.NavButton {
 	background: cornflowerblue;
 	border: none;
 	color: white;
@@ -99,13 +120,14 @@ a
 	padding: 6px 10px;
 	transition: all 0.5s;
 }
-#NavButton:hover {
+.NavButton:hover {
 	color: cornflowerblue;
 	border-bottom: 2px solid cornflowerblue;
 	background: white;
 	letter-spacing: 2px;
 }
 .AsideTitle {
+	width: 80%;
 	margin: 2px;
 	padding: 8px;
 	height: 30px;
@@ -115,4 +137,7 @@ a
 	text-align: center;
 	color: cornflowerblue;
 	border-bottom: 2px solid cornflowerblue;
+	position: relative;
+	left: 50%;
+	margin-left: calc(-80%/2 - 10px/2);
 }
