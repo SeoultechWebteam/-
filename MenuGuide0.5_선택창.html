@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MenuGuide0.5</title>
+	<style>
+		@import url(MenuGuide0.5_선택창.css);
+	</style>
+	<script src="MenuGuide0.5.js">
+		//JavaScript외부파일
+	</script>
+</head>
+<body>
+	<div class='header'>
+		<a href="MenuGuide0.5_메인.html"><button class='HeaderButton'></button></a>
+		<div>메뉴골라줘 v0.5</div>
+	</div>
+	<div class='section'>
+		<div class="QuestionBox">
+			<p>모든 문제에 대한 답을 해주세요</p>
+			<form id='question'>
+				<h2>1.</h2>
+				<input type="checkbox" name="Q1" id="n11" value="K" onclick='getQnumVal(event,1)'><label for="n11" class="roundB">한식</label>
+				<input type="checkbox" name="Q1" id="n12" value="J" onclick='getQnumVal(event,1)'><label for="n12" class="roundB">일식</label>
+				<input type="checkbox" name="Q1" id="n13" value="C" onclick='getQnumVal(event,1)'><label for="n13" class="roundB">중식</label>
+				<input type="checkbox" name="Q1" id="n14" value="W" onclick='getQnumVal(event,1)'><label for="n14" class="roundB">양식</label>
+				<input type="checkbox" name="Q1" id="s1" value="1" onclick='getQnumVal(event,1)'><label for="s1" class="roundB">Skip</label>
+				<h2>2.</h2>
+				<input type="checkbox" name="Q2" id="n21" value="2.1" onclick='getQnumVal(event,2)'><label for="n21" class="roundB">혼자</label>
+				<input type="checkbox" name="Q2" id="n22" value="2.2" onclick='getQnumVal(event,2)'><label for="n22" class="roundB">단체</label>
+				<input type="checkbox" name="Q2" id="s2" value="2" onclick='getQnumVal(event,2)'><label for="s2" class="roundB">Skip</label>
+				<h2>3.</h2>
+				<input type="checkbox" name="Q3" id="n31" value="3.1" onclick='getQnumVal(event,3)'><label for="n31" class="roundB">밥</label>
+				<input type="checkbox" name="Q3" id="n32" value="3.2" onclick='getQnumVal(event,3)'><label for="n32" class="roundB">빵/떡</label>
+				<input type="checkbox" name="Q3" id="n33" value="3.3" onclick='getQnumVal(event,3)'><label for="n33" class="roundB">면</label>
+				<input type="checkbox" name="Q3" id="n34" value="3.4" onclick='getQnumVal(event,3)'><label for="n34" class="roundB">고기</label>
+				<input type="checkbox" name="Q3" id="s3" value="3" onclick='getQnumVal(event,3)'><label for="s3" class="roundB">Skip</label>
+				<h2>4.</h2>
+				<input type="checkbox" name="Q4" id="n41" value="4.1" onclick='getQnumVal(event,4)'><label for="n41" class="roundB">매움</label>
+				<input type="checkbox" name="Q4" id="n42" value="4.2" onclick='getQnumVal(event,4)'><label for="n42" class="roundB">담백</label>
+				<input type="checkbox" name="Q4" id="s4" value="4" onclick='getQnumVal(event,4)'><label for="s4" class="roundB">Skip</label>
+			</form>
+		</div>
+		<div class="nav">
+			<button class='NavButton' id="NavSubmitB" onclick="getMenu()" title="추천시작"></button>
+			<button class='NavButton' id="NavResetB" onclick="resetAll()" title="리셋"></button>
+		</div>
+	</div>
+	<div class='aside'>
+		<div class="AsideBox" id="aside_1">
+			<div class="AsideTitle">추천메뉴</div>
+			<div id='MENU'></div> <!--메뉴출력-->
+			<div id='menuIMG'></div> <!--메뉴 이미지 출력 -->
+		</div>
+		<div class="AsideBox" id="aside_2">
+			<div class="AsideTitle">선택결과</div>
+			<div id='Result'></div>
+		</div>
+	</div>
+	<div class='footer'>
+		<p>웹 프로그래밍 프로젝트</p>
+	</div>
+</body>
+</html>

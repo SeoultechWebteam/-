@@ -1,0 +1,265 @@
+html, body, 
+h2, h3, h4, h5, h6, h1, p
+{
+    margin: 0;
+}
+html,
+body
+{
+	margin:0;
+    padding:0;
+	width: 100%;
+	height: 100%;
+	color: black;
+	background: white;
+}
+a
+{
+	text-decoration: none; //링크 기본 밑줄을 제거
+}
+input[type="checkbox"]
+{
+	display: none; //체크박스 체크상자 지우기
+}
+.header
+{
+    width: 100%;
+    height: 25px;
+    background: black;
+	color: white;
+	text-align: right;
+	position: fixed;
+	z-index: 1;
+}
+.nav
+{
+	display: inline-block;
+	width: 54px;
+	height: 100px;
+	margin-left: 56px;
+	padding: 10px 0 10px 0;
+	background: black;
+	border-radius: 0 12px 12px 0;
+	text-align: center;
+	position: fixed;
+	z-index: 1;
+}
+.section
+{
+	width: calc(70% + 32px);
+	min-height: calc(100% - 25px - 50px - 36px);
+	padding-top: 35px;
+	font-size: 1.2em;
+}
+.aside
+{
+	width: calc(30% - 40px);
+	height: calc(100% - 25px - 50px - 32px);
+	background: white;
+	position: fixed;
+	top: 35px;
+	right: 10px;
+}
+.footer
+{
+	width: 90%;
+	height: 50px;
+	background: white;
+	border-top: 4px solid black;
+	color: lightslategray;
+	text-align: center;
+	position: relative;
+	left: 50%;
+	margin-left: calc(-90%/2);
+}
+.HeaderButton { /*홈버튼*/
+	height: 100%;
+	background: url("https://raw.githubusercontent.com/SeoultechWebteam/images/main/%ED%99%88.png") no-repeat;
+	background-size: 110%;
+	background-position: center;
+	border: none;
+	display: inline-block;
+	font-weight: bold;
+	margin-left: 10px;
+	padding: 6px 10px;
+	transition: all 0.3s;
+	position: absolute;
+	left: 0;
+}
+.HeaderButton:hover {
+	background-size: 130%;
+}
+.AsideBox {
+	width: calc(100% - 8px);
+	border: 4px solid black;
+	border-radius: 0 20px 20px 0;
+	font-size: 1.2em;
+}
+#aside_1 {
+	height: calc(65% - 10px - 8px);
+	margin-bottom: 10px;
+}
+#aside_2 {
+	height: calc(35% - 8px);
+}
+.AsideTitle {
+	width: calc(100%);
+	height: 30px;
+	padding: 10px 0 10px 0;
+	font-size: 1.2em;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-align: center;
+	color: black;
+	border-bottom: 4px solid black;
+	white-space: nowrap; //줄바꿈 안함
+}
+#MENU { //추천메뉴
+	width: 100%;
+	height: calc(50% - 54px - 20px);
+	padding: 10px 20px 10px 20px;
+	font-size: 1.5em;
+	overflow-y:auto;
+}
+#menuIMG { //메뉴이미지
+	width: 100%;
+	height: 50%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(.jpg);
+	border-radius: 0 0 20px 0;
+}
+#Result { //선택결과
+	width: 100%;
+	height: calc(100% - 54px - 30px);
+	padding: 10px 20px 20px 20px;
+	overflow-y:auto;
+}
+.NavButton {
+	width: 50px;
+	height: 50px;
+	border: none;
+	display: inline-block;
+	position: relative;
+}
+@keyframes rotateImg {
+	30% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+#NavSubmitB {
+	background: url("https://github.com/SeoultechWebteam/images/blob/main/%EC%B6%94%EC%B2%9C%EC%8B%9C%EC%9E%91.png?raw=true") no-repeat;
+	background-size: auto 70%;
+	background-position: center;
+	transition: background-size 0.3s;
+	transform: rotate(0deg);
+}
+#NavSubmitB:hover {
+	background-size: auto 80%;
+	animation-name: rotateImg;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+#NavSubmitB:active {
+	background-size: auto 75%;
+}
+#NavResetB {
+	background: url("https://github.com/SeoultechWebteam/images/blob/main/%EB%A6%AC%EC%85%8B.png?raw=true") no-repeat;
+	background-size: auto 70%;
+	background-position: center;
+	transition: background-size 0.3s;
+}
+#NavResetB:hover {
+	background-size: auto 80%;
+	animation-name: rotateImg;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+#NavResetB:active {
+	background-size: auto 75%;
+}
+.QuestionBox {
+	display: inline-block;
+	width: calc(90% - 160px);
+	height: calc(100% - 84px);
+	padding: 40px;
+	margin-bottom: 18px;
+	border: 4px solid black;
+	border-radius: 20px 0 0 20px;
+	position: relative;
+	left: 60px;
+}
+.roundB {
+	width: 90px;
+	display: inline-block;
+	padding: 20px;
+	margin: 10px 5px 20px 5px;
+	border: 3px solid black;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px black;
+	text-align: center;
+	font-size: 1.4em;
+	font-weight: bold;
+	cursor: pointer;
+}
+.roundB:hover {
+	background: floralwhite;
+	color: black;
+}
+.roundB:active{
+	box-shadow: none;
+	position: relative;
+	top: 2px;
+	left: 2px;
+}
+input[type="checkbox"]:checked + .roundB {
+	box-shadow: none;
+	position: relative;
+	top: 2px;
+	left: 2px;
+	color: white;
+	background: dimgray;
+}
+#n11:checked + .roundB { /*체크했을 때 배경*/
+	background: url("https://github.com/SeoultechWebteam/images/blob/main/%ED%95%9C%EA%B5%AD.png?raw=true");
+	background-size: 200%;
+	background-position: center;
+	color: white;
+}
+#n12:checked + .roundB { /*체크했을 때 배경*/
+	background: url("https://github.com/SeoultechWebteam/images/blob/main/%EC%9D%BC%EB%B3%B8.png?raw=true");
+	background-size: 150%;
+	background-position: center;
+	color: white;
+}
+#n13:checked + .roundB { /*체크했을 때 배경*/
+	background: url("https://github.com/SeoultechWebteam/images/blob/main/%EC%A4%91%EA%B5%AD.png?raw=true");
+	background-size: 140%;
+}
+#n14:checked + .roundB { /*체크했을 때 배경*/
+	background: url("https://github.com/SeoultechWebteam/images/blob/main/%EC%84%9C%EC%96%91.jpg?raw=true");
+	background-size: 140%;
+	background-position: center;
+	color: black;
+}
+#n21:checked + .roundB { /*체크했을 때 배경*/
+	background: url("https://github.com/SeoultechWebteam/images/blob/main/%EC%82%AC%EB%9E%8C1.png?raw=true") no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+	color: cornflowerblue;
+}
+#n22:checked + .roundB { /*체크했을 때 배경*/
+	background: url("https://github.com/SeoultechWebteam/images/blob/main/%EC%82%AC%EB%9E%8C%EC%82%AC%EB%9E%8C.png?raw=true");
+	background-size: 100%;
+	background-position: center;
+	color: cornflowerblue;
+}
+#n41:checked + .roundB { /*체크했을 때 배경*/
+	background: indianred;
+	background-size: 100%;
+}
+#n42:checked + .roundB { /*체크했을 때 배경*/
+	background: navajowhite;
+	background-size: 100%;
+	color: black;
+}
